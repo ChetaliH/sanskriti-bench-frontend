@@ -1,4 +1,6 @@
 import '../Guidelines.css';
+import Sidebar from './Sidebar';
+import '../Sidebar.css';
 import { Scrollbar } from 'react-scrollbars-custom';
 import image3 from '../assets/Images/SBPic3.png';
 import image4 from '../assets/Images/SBPic4.png';
@@ -8,6 +10,7 @@ function About(){
     
     return(
     <div><header className='header'></header>
+        <Sidebar />
         <div className={classes.join(' ')}>
             <div className='headerAbout'>SanskritiBench: Bridging NLP and Indian Cultural Richness</div>
             <div className='subheader'>Abstract</div>

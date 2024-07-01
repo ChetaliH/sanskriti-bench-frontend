@@ -2,12 +2,15 @@ import '../Guidelines.css';
 import { Scrollbar } from 'react-scrollbars-custom';
 import image2 from '../assets/Images/SBPic2.png';
 import image1 from '../assets/Images/SBPic1.png';
+import Sidebar from './Sidebar';
+import '../Sidebar.css';
 
 function Tutorials(){
     const classes = ['page', 'motion'];
 
     return(
         <div><header className='header'></header>
+            <Sidebar />
             <div className={classes.join(' ')}>
                 <h2>Resources</h2>
                 <p>Here are some list of resources which will help you to get started.</p>

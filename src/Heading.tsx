@@ -8,6 +8,7 @@ function Heading(){
     const classes = ['page', 'motion'];
     return (
     <div><header className='header'></header> 
+    <Sidebar />
     <div className={classes.join(' ')}>
         
         <h2>Sanskriti Bench App</h2>

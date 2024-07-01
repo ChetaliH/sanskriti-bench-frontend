@@ -1,11 +1,13 @@
 import '../Guidelines.css';
 import { Scrollbar } from 'react-scrollbars-custom';
-import YoutubeEmbed from './YouTubeComponent';
+/*import YoutubeEmbed from './YouTubeComponent';*/
+import Sidebar  from './Sidebar';
 
 function Guidelines(){
     const classes = ['page', 'motion'];
     return(
         <div><header className='header'></header>
+            <Sidebar />
             <div className={classes.join(' ')}>
 
                <h3 >Guidelines</h3> 
