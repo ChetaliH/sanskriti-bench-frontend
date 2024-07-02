@@ -1,11 +1,18 @@
 
 import './BoxContainer.css';
 import { Scrollbar } from 'react-scrollbars-custom';
+import { useNavigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import './Sidebar.css';
 
 function Heading(){
     const classes = ['page', 'motion'];
+    const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Navigate to UserView
+    navigate('/user-view');
+  };
     return (
     <div><header className='header'></header> 
     <Sidebar />
@@ -13,7 +20,7 @@ function Heading(){
         
         <h2>Sanskriti Bench App</h2>
         
-        <form className='box'>
+        <form className='box' onSubmit={(e) => { e.preventDefault(); handleLogin(); }}>
             <h3>Login</h3>
             <label>Username</label>
             <input

@@ -1,9 +1,10 @@
 .navbar{
-    background-color:rgb(253, 235, 187) ;
+    background-color: rgb(253, 235, 187);
     height: 3.75rem;
     display: flex;
     justify-content: start;
     align-items: center;
+    z-index: 999990;
 }
 
 .menu-bars{
@@ -14,7 +15,7 @@
 
 .nav-menu{
     background-color: rgb(245, 202, 156);
-    width: 250px;
+    width: 267px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,11 +23,22 @@
     top: 0;
     left: -100%;
     transition: 850ms;
+    overflow-y: auto;
+    overflow-x: auto;
+    z-index: 999990;
 }
 
 .nav-menu.active{
+    background-color: rgb(245, 202, 156);
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    position: fixed;
     left: 0;
     transition: 350ms;
+    z-index: 999990; ;
 }
 
 .nav-text{
@@ -48,6 +60,11 @@
     align-items: center;
     padding: 0 16px;
     border-radius: 4px;
+    background-color:rgb(245, 202, 156) ;
+}
+
+.nav-text span, .nav-text h2, .nav-text p{
+    background-color:rgb(245, 202, 156) ;
 }
 
 .nav-text a:hover{
@@ -56,6 +73,7 @@
 
 .nav-menu-items{
     width: 100%;
+    background-color: rgb(245, 202, 156) ;
 }
 
 .navbar-toggle{
@@ -70,3 +88,74 @@
 span{
     margin-left: 16px;
 }
+
+.nav-menu-items li{
+    background-color: rgb(245, 202, 156);
+    display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: rgb(20,20,20);
+  font-size: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar-image{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.nav-menu::-webkit-scrollbar {
+    background: transparent;
+    border-radius: 100px;
+    height: 6px;
+    width: 6px;
+    
+}
+
+.nav-menu::-webkit-scrollbar-track {
+    background: #333; /* Color of the scrollbar track */
+}
+
+.dropdown-container {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color:rgb(253, 235, 187) ;
+  }
+
+  .dropdown {
+    width: 100%;
+    padding: 8px;
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    height: 2.5em;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+
+.dropdown option {
+    padding: 10px;
+    line-height: 70px; /* Adjust this value to increase the height of each option */
+    font-size: 16px;
+}
+
+.dropdown option:hover {
+    background-color: rgb(253, 202, 187);
+}
+  
+.resizer {
+    width: 1px;
+    cursor: ew-resize;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
