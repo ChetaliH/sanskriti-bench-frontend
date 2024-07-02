@@ -125,7 +125,16 @@ span{
     width: 100%;
     padding: 10px;
     text-align: center;
-    background-color:rgb(253, 235, 187) ;
+    background-color:rgb(245, 202, 156) ;
+  }
+
+  .customFa{
+    color: black;
+  }
+
+  .customAi{
+    color: black;
+    background-color:rgb(245, 202, 156) ;
   }
 
   .dropdown {

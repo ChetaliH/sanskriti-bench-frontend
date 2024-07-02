@@ -2,6 +2,7 @@
 import React, { ChangeEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Sidebar.css';
+import '../UserView.css';
 
 interface Option {
   title: string;
@@ -23,7 +24,7 @@ const DropdownNew: React.FC<DropdownProps> = ({ options, onChange }) => {
   };
 
   return (
-    <div className="dropdown-container">
+    <div className="dropdown-container-User">
       <select onChange={handleChange} className="dropdown" defaultValue="">
         <option value="" disabled>Select an option</option>
         {options.map((option, index) => (

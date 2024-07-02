@@ -17,8 +17,18 @@ function Sidebar(){
         ['Odia',''],
         ['Hindi',''],
         ['Punjabi',''],
-        ['Assamese','']
-
+        ['Assamese',''],
+        ['Gujarati',''],
+        ['Kannada',''],
+        ['Kashmiri',''],
+        ['Konkani',''],
+        ['Malayalam',''],
+        ['Manipuri',''],
+        ['Marathi',''],
+        ['Sanskrit',''],
+        ['Tamil',''],
+        ['Telugu',''],
+        ['Sanskrit','']
 
 ];
     const showSidebar = () => setSidebar(!sidebar);
@@ -49,14 +59,14 @@ function Sidebar(){
             
             <div className="navbar">
                 <Link to="#" className="menu-bars">
-                    <FaIcons.FaBars onClick={showSidebar}/>
+                    <FaIcons.FaBars className="customFa" onClick={showSidebar}/>
                 </Link>
             </div>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'} style={{ width: `${width}px` }}>
                 <ul className="nav-menu-items" >
                     <li className="navbar-toggle">
                         <Link to="#" className="menu-bars">
-                            <AiIcons.AiOutlineClose onClick={closeSidebar}/>
+                            <AiIcons.AiOutlineClose className="customAi" onClick={closeSidebar}/>
                         </Link>
                     </li>
                     <li className="sidebar-image">
